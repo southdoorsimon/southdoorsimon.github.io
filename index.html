@@ -151,6 +151,211 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-10-16/Vim" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/25/10-16/Vim/">10-16/Vim</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/25/10-16/Vim/" class="archive-article-date">
+  	<time datetime="2019-10-25T08:35:23.829Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h1><h3 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h3><p>i    游标前插入</p>
+<p>o    另起一行插入</p>
+<p>2dd    删除两行</p>
+<p>s    向后删除</p>
+<p>u    撤销</p>
+<p>p    粘贴</p>
+<p>y    复制</p>
+<p>:    底线命令模式</p>
+<p>/word    搜索word，n 下一个结果，N 上一个结果</p>
+<h3 id="末行模式"><a href="#末行模式" class="headerlink" title="末行模式"></a>末行模式</h3><p>:set nu    设置行号</p>
+<p>:gg    跳转首行</p>
+<p>:GG    跳转尾行</p>
+<p>:7    7gg    7G 跳转到第7行</p>
+<p>:set nonu    删除行号</p>
+<p>:wq    保存并退出</p>
+<p>:w！    强行保存会覆盖文件，文件所有者可能会更改</p>
+<p>:q！    不保存直接退出</p>
+<p>:%s/word1/word2    替换成word2</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/25/10-16/Vim/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-10-16/Linux命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/25/10-16/Linux%E5%91%BD%E4%BB%A4/">10-16/Linux命令</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/25/10-16/Linux%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2019-10-25T08:35:23.827Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Linux基础命令"><a href="#Linux基础命令" class="headerlink" title="Linux基础命令"></a>Linux基础命令</h1><h3 id="格式"><a href="#格式" class="headerlink" title="格式"></a><strong>格式</strong></h3><p>命令名 空格 参数 </p>
+<p>ls -al /tmp</p>
+<h3 id="开机关机重启"><a href="#开机关机重启" class="headerlink" title="开机关机重启"></a>开机关机重启</h3><p>重启 </p>
+<ul>
+<li><pre><code>reboot
+init 6
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">关机</span><br><span class="line"></span><br><span class="line">-</span><br></pre></td></tr></table></figure>
+init 0
+halt
+shutdown
+poweroff
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 文件管理</span><br><span class="line"></span><br><span class="line">新建文件</span><br><span class="line"></span><br><span class="line">- touch 新建文件</span><br></pre></td></tr></table></figure>
+touch /tmp/newfile
+touch ./newfile2
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- mkdir 文件夹</span><br></pre></td></tr></table></figure>
+mkdir /home/ko/hello
+mkdir ./hello
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">相对路径、绝对路径</span><br><span class="line"></span><br><span class="line">-</span><br></pre></td></tr></table></figure>
+pwd    查看当前路径
+/    root根目录（绝对路径）
+.    上一层文件夹（相对路径）
+..    上两级文件夹（相对路径）
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">删除</span><br><span class="line"></span><br><span class="line">-</span><br></pre></td></tr></table></figure>
+rm -rf /*    删除文件
+rm -r * 删除文件夹
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">复制粘贴</span><br><span class="line"></span><br><span class="line">-</span><br></pre></td></tr></table></figure>
+cp xxx ./desktop/hello
+mv xxx ./desktop
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">查看</span><br><span class="line"></span><br><span class="line">-</span><br></pre></td></tr></table></figure>
+cat /hello/abc    查看全部
+more /hello/abc 从头开始显示一页
+head -n 15 /hello/abc 从头显示n行，默认10行
+tail -n 15 /hello/abc 从尾显示
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">查找</span><br><span class="line"></span><br><span class="line">-</span><br></pre></td></tr></table></figure>
+find -name “xxx”    //全局查找
+grep “xxx” 文件
+或
+cat /etc/passwd | grep xxx    
+    -v 可以反向查找
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">whereis 或 which</span><br><span class="line"></span><br><span class="line">- 查找命令的位置</span><br><span class="line">- 确定命令是否存在</span><br><span class="line"></span><br><span class="line">### 自学</span><br><span class="line"></span><br><span class="line">awk</span><br><span class="line"></span><br><span class="line">- &lt;https://man.linuxde.net/awk &gt;</span><br><span class="line"></span><br><span class="line">sed</span><br><span class="line"></span><br><span class="line">### 任务</span><br><span class="line"></span><br><span class="line">kill -9 id	杀进程</span><br><span class="line"></span><br><span class="line">ctrl +Z	将任务退到后台，返回到终端</span><br><span class="line"></span><br><span class="line">jobs</span><br><span class="line"></span><br><span class="line">fg %N	使第N个任务前台运行</span><br><span class="line"></span><br><span class="line">bg %N	使第N个任务后台运行</span><br><span class="line"></span><br><span class="line">**任务如何持续运行** </span><br><span class="line"></span><br><span class="line">- 末尾加 &amp; 符号</span><br><span class="line"></span><br><span class="line">- nohup 命令 &amp; &lt;https://www.ibm.com/developerworks/cn/linux/l-cn-nohup/index.html &gt;</span><br><span class="line"></span><br><span class="line">- setsid</span><br><span class="line"></span><br><span class="line">- service服务</span><br><span class="line"></span><br><span class="line">- screen&lt; https://www.ibm.com/developerworks/cn/linux/l-cn-screen/index.html &gt;</span><br></pre></td></tr></table></figure>
+screen -ls    查看
+screen -r id    恢复连接指定session会话
+Ctrl-A A    显示窗口
+Ctrl-A D    离开这个会话
+Ctrl-A K    关闭这个会话窗口</code></pre></li>
+</ul>
+<p>压缩</p>
+<ul>
+<li><p>tar</p>
+</li>
+<li><p>zip</p>
+</li>
+</ul>
+<p>快捷键</p>
+<ul>
+<li>强行停止 Ctrl + C</li>
+<li>退出shell进程  exit 或 Ctrl + D</li>
+<li>清屏 Ctrl + L </li>
+<li>后台挂起 Ctrl + Z</li>
+<li>时间 date</li>
+</ul>
+<p>文件</p>
+<p><img src="Linux%E5%91%BD%E4%BB%A4.assets/1571208317766.png" alt="1571208317766"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/25/10-16/Linux%E5%91%BD%E4%BB%A4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
